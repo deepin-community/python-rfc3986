@@ -1,0 +1,32 @@
+Source: python-rfc3986
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+Build-Depends:
+ debhelper-compat (= 10),
+ dh-python,
+ openstack-pkg-tools (>= 52~),
+ python3-all,
+ python3-setuptools,
+Build-Depends-Indep:
+ python3-attr,
+ python3-idna,
+ python3-pytest,
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-rfc3986
+Vcs-Git: https://salsa.debian.org/openstack-team/python/python-rfc3986.git
+Homepage: https://rfc3986.rtfd.org
+
+Package: python3-rfc3986
+Architecture: all
+Depends:
+ python3-idna,
+ ${misc:Depends},
+ ${python3:Depends},
+Description: validating URI references per RFC 3986 - Python 3.x
+ This package provides a Python implementation of RFC 3986, including
+ validation and authority parsing.
+ .
+ This package contains the Python 3.x module.

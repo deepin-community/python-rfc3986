@@ -1,0 +1,90 @@
+python-rfc3986 (1.5.0-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 29 Sep 2021 13:32:40 +0200
+
+python-rfc3986 (1.5.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add python3-attr as build-depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 25 Aug 2021 10:41:32 +0200
+
+python-rfc3986 (1.4.0-3) unstable; urgency=medium
+
+  * Rebuild source-only.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 25 Jan 2021 22:30:14 +0100
+
+python-rfc3986 (1.4.0-2) unstable; urgency=medium
+
+  * Add python3-idna as (build-)depends (Closes: #975924).
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 27 Nov 2020 00:23:36 +0100
+
+python-rfc3986 (1.4.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.1.
+
+  [ Thomas Goirand ]
+  * New upstream release (Closes: #960147).
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 10 May 2020 10:30:01 +0200
+
+python-rfc3986 (1.2.0-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 17 Jul 2019 01:50:27 +0200
+
+python-rfc3986 (1.2.0-1) experimental; urgency=medium
+
+  [ Daniel Baumann ]
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Standards-Version is now 4.3.0.
+  * Remove Python 2 support.
+  * Add PYTHONPATH=.:$(CURDIR)/src when running tests.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 20 Mar 2019 20:52:31 +0100
+
+python-rfc3986 (0.2.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+
+  [ Thomas Goirand ]
+  * Using python -m pytest instead of py.test-3.5 (Closes: #835245835245).
+  * Using goodies from openstack-pkg-tools >= 52~.
+  * Standards-Version: 3.9.8.
+  * Removed inactive uploaders.
+  * Fixed debian/copyright ordering.
+  * Removed pre-depends on dpkg version, moved pytest to b-d-indep.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 05 Sep 2016 08:00:17 +0000
+
+python-rfc3986 (0.2.0-2) unstable; urgency=medium
+
+  * Fix README.rst which prevents builds in Wheezy because of unicode.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 12 Jul 2014 23:30:50 +0800
+
+python-rfc3986 (0.2.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #754573)
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 12 Jul 2014 23:05:54 +0800
